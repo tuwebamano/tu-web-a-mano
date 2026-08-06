@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tu Web a Mano — Diseño web a medida</title>
+<meta name="description" content="Tu Web a Mano: diseñamos y programamos webs a medida, sin plantillas, para negocios que quieren destacar de verdad." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#inicio" class="logo" data-cursor-magnetic>Tu web a mano</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#proceso" class="nav-link">Proceso</a>
+      <a href="#portfolio" class="nav-link">Portafolio</a>
+      <a href="#planes" class="nav-link">Planes</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <a href="#contacto" class="btn btn-primary btn-small nav-cta-mobile">Contactar</a>
+    </nav>
+
+    <a href="#contacto" class="btn btn-primary btn-small nav-cta" data-cursor-magnetic>Contactar</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-fallback-bg" aria-hidden="true"></div>
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-photo-blur" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-content container">
+      <p class="eyebrow mono" data-reveal>DISEÑO Y DESARROLLO WEB A MEDIDA</p>
+      <h1 class="hero-title" id="heroTitle" data-reveal data-reveal-delay="1">Nada de plantillas.<br />Todo a mano.</h1>
+      <p class="hero-subtitle" data-reveal data-reveal-delay="2">Diseñamos y programamos tu web desde cero — rápida, a tu medida, y pensada para conseguirte clientes de verdad.</p>
+      <div class="hero-actions" data-reveal data-reveal-delay="3">
+        <a href="#contacto" class="btn btn-primary" data-cursor-magnetic>Contactar</a>
+        <a href="#portfolio" class="btn btn-outline" data-cursor-magnetic>Ver portafolio</a>
+      </div>
+    </div>
+
+    <button class="scroll-hint" id="scrollHint" aria-label="Bajar a la siguiente sección" data-cursor-magnetic>
+      <span></span>
+    </button>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section class="manifesto">
+    <div class="manifesto-glow" id="manifestoGlow" aria-hidden="true"></div>
+    <div class="manifesto-blob manifesto-blob--left" id="manifestoBlobLeft" aria-hidden="true"></div>
+    <div class="manifesto-blob manifesto-blob--right" id="manifestoBlobRight" aria-hidden="true"></div>
+
+    <div class="manifesto-content container">
+      <p class="font-instrument manifesto-quote">
+        &ldquo;En Tu Web a Mano creemos que una web hecha a medida se nota. Escuchamos primero qué necesita tu negocio, y solo después decidimos qué es lo que de verdad te va a funcionar. Sin plantillas, sin relleno &mdash; solo una web que te representa.&rdquo;
+      </p>
+      <p class="manifesto-attribution mono">— Tu Web a Mano</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <canvas class="section-canvas" id="servicesCanvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-eyebrow mono">Servicios</span>
+        <h2 class="section-title">Lo que hacemos por tu negocio.</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card liquid-glass" data-tilt data-reveal>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="4.5" r="1.6" />
+            <path d="M12 6.1 L5.5 20 M12 6.1 L18.5 20" />
+            <path d="M4 20h3 M17 20h3" />
+          </svg>
+          <h3>Diseño a medida</h3>
+          <p>Sin plantillas ni WordPress genérico. Cada web se programa desde cero, pensada para tu negocio.</p>
+        </article>
+        <article class="service-card liquid-glass" data-tilt data-reveal data-reveal-delay="1">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 3 21 8 12 13 3 8 12 3" />
+            <polyline points="3 13 12 18 21 13" />
+            <polyline points="3 18 12 22.5 21 18" />
+          </svg>
+          <h3>Experiencias inmersivas</h3>
+          <p>Animaciones 3D, scroll interactivo y microinteracciones cuando tu marca lo pide.</p>
+        </article>
+        <article class="service-card liquid-glass" data-tilt data-reveal data-reveal-delay="2">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5h18v11H9l-4.5 4v-4H3z" />
+            <path d="M7 10h10 M7 13.5h6" />
+          </svg>
+          <h3>Formularios conectados</h3>
+          <p>Reservas y contactos conectados a WhatsApp, email o tus automatizaciones, sin depender de terceros.</p>
+        </article>
+        <article class="service-card liquid-glass" data-tilt data-reveal data-reveal-delay="3">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 15a9 9 0 0 1 18 0" />
+            <path d="M12 15 L16.2 9.8" />
+            <path d="M12 15 m-1.1 0 a1.1 1.1 0 1 0 2.2 0 a1.1 1.1 0 1 0 -2.2 0" />
+          </svg>
+          <h3>Rendimiento y SEO</h3>
+          <p>Webs ligeras y rápidas, construidas para cargar bien y aparecer en Google.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process" id="proceso">
+    <canvas class="section-canvas" id="processCanvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-eyebrow mono">Proceso</span>
+        <h2 class="section-title">Así trabajamos, paso a paso.</h2>
+      </div>
+
+      <div class="process-line" id="processLine">
+        <div class="process-line-track"></div>
+        <div class="process-line-fill" id="processLineFill"></div>
+
+        <div class="process-item" data-reveal>
+          <span class="process-number mono">01</span>
+          <h3>Cuéntanos tu idea</h3>
+          <p>Nos explicas tu negocio y qué necesitas conseguir con tu web.</p>
+        </div>
+        <div class="process-item" data-reveal data-reveal-delay="1">
+          <span class="process-number mono">02</span>
+          <h3>Diseñamos y programamos</h3>
+          <p>Creamos tu web a medida, sin plantillas, con el estilo que mejor te representa.</p>
+        </div>
+        <div class="process-item" data-reveal data-reveal-delay="2">
+          <span class="process-number mono">03</span>
+          <h3>La revisamos juntos</h3>
+          <p>Ajustamos lo que haga falta hasta que sea exactamente lo que buscabas.</p>
+        </div>
+        <div class="process-item" data-reveal data-reveal-delay="3">
+          <span class="process-number mono">04</span>
+          <h3>Entrega y puesta en marcha</h3>
+          <p>Te la entregamos lista para conectar tu dominio y tu hosting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO — carrusel cilíndrico, se gira con el scroll -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-eyebrow mono">Portafolio</span>
+        <h2 class="section-title">Webs que ya hemos hecho a mano.</h2>
+      </div>
+    </div>
+
+    <div class="portfolio-stage" id="portfolioStage" tabindex="0" role="region" aria-label="Carrusel de proyectos. Usa las flechas del teclado o los botones para girarlo.">
+      <button type="button" class="portfolio-nav portfolio-nav--prev" id="portfolioPrev" aria-label="Proyecto anterior" data-cursor-magnetic>‹</button>
+      <button type="button" class="portfolio-nav portfolio-nav--next" id="portfolioNext" aria-label="Proyecto siguiente" data-cursor-magnetic>›</button>
+      <div class="portfolio-track" id="portfolioTrack">
+        <article class="portfolio-card">
+          <a class="portfolio-media" href="https://black-cherry-b59a.tuwebamano.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir la web de Estética Natural (nueva pestaña)">
+            <img src="assets/images/portfolio-estetica-natural.jpg" alt="Inicio de la web Estética Natural" draggable="false" />
+          </a>
+          <div class="portfolio-info">
+            <h3>Estética Natural</h3>
+            <p class="mono">Centro de estética · Terrassa</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <a class="portfolio-media" href="https://empty-bush-bab0.tuwebamano.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir la web de PelosOut (nueva pestaña)">
+            <img src="assets/images/portfolio-pelosout.jpg" alt="Inicio de la web PelosOut" draggable="false" />
+          </a>
+          <div class="portfolio-info">
+            <h3>PelosOut</h3>
+            <p class="mono">Peluquería y barbería · Barcelona</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <a class="portfolio-media" href="https://autumn-sea-5bb1.tuwebamano.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir la web de Morfo (nueva pestaña)">
+            <img src="assets/images/portfolio-morfo.jpg" alt="Inicio de la web Morfo" draggable="false" />
+          </a>
+          <div class="portfolio-info">
+            <h3>Morfo</h3>
+            <p class="mono">Concesionario de automóviles de lujo</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <a class="portfolio-media" href="https://shiny-tree-de37.tuwebamano.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir la web de Cafeto (nueva pestaña)">
+            <img src="assets/images/portfolio-cafeto.jpg" alt="Inicio de la web Cafeto" draggable="false" />
+          </a>
+          <div class="portfolio-info">
+            <h3>Cafeto</h3>
+            <p class="mono">Cafetería de especialidad</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--empty">
+          <div class="portfolio-media portfolio-media--empty">
+            <span class="portfolio-plus" aria-hidden="true">+</span>
+          </div>
+          <div class="portfolio-info">
+            <h3>Aquí podría estar tu proyecto</h3>
+            <p class="mono">Próximamente</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="plans" id="planes">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-eyebrow mono">Planes</span>
+        <h2 class="section-title">Elige el plan que necesita tu negocio.</h2>
+      </div>
+
+      <div class="plans-grid">
+        <article class="plan-card" data-reveal>
+          <p class="plan-price"><span class="plan-price-currency">€</span>349<span class="plan-price-suffix">/proyecto · sin mensualidad</span></p>
+          <h3 class="plan-name">Básico</h3>
+          <ul class="plan-features">
+            <li>Landing de una página (4-5 bloques)</li>
+            <li>Responsive y pensada para cargar rápido</li>
+            <li>Formulario de contacto a email</li>
+            <li>SEO mínimo: title, meta description y favicon</li>
+            <li>Aviso legal y privacidad con tus datos</li>
+          </ul>
+          <a href="#contacto" class="btn btn-ghost plan-cta" data-cursor-magnetic>Elegir Básico</a>
+        </article>
+
+        <article class="plan-card plan-card--featured" data-reveal data-reveal-delay="1">
+          <span class="plan-badge mono">Más elegido</span>
+          <p class="plan-price"><span class="plan-price-currency">€</span>799<span class="plan-price-suffix">/proyecto</span></p>
+          <p class="plan-price-monthly">+ 39&nbsp;€/mes <span>mantenimiento incluido</span></p>
+          <h3 class="plan-name">Pro</h3>
+          <ul class="plan-features">
+            <li>Hasta 5 secciones con contenido 100% a medida</li>
+            <li>Animaciones sutiles: reveal al scroll, hovers</li>
+            <li>SEO real: sitemap, robots.txt y Open Graph</li>
+            <li>Formulario conectado a WhatsApp y a email</li>
+            <li>Cloudflare y analítica básica incluidos</li>
+          </ul>
+          <a href="#contacto" class="btn btn-primary plan-cta" data-cursor-magnetic>Elegir Pro</a>
+        </article>
+
+        <article class="plan-card" data-reveal data-reveal-delay="2">
+          <p class="plan-price">
+            <span class="plan-price-from">Desde</span><span class="plan-price-currency">€</span>1.399<span class="plan-price-suffix">/proyecto</span>
+          </p>
+          <p class="plan-price-monthly">+ 99&nbsp;€/mes <span>mantenimiento y panel incluidos</span></p>
+          <h3 class="plan-name">Élite</h3>
+          <ul class="plan-features">
+            <li>Web multi-sección con animaciones a medida</li>
+            <li>Panel propio: edita textos, fotos y horarios sin llamarme</li>
+            <li>Reservas y mensajes de contacto automatizados</li>
+            <li>SEO avanzado y analítica con eventos de conversión</li>
+            <li>Backups automáticos y monitorización 24/7</li>
+            <li>Soporte prioritario</li>
+          </ul>
+          <a href="#contacto" class="btn btn-ghost plan-cta" data-cursor-magnetic>Elegir Élite</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container contact-grid">
+      <div class="contact-text" data-reveal>
+        <span class="section-eyebrow mono">Contacto</span>
+        <h2 class="section-title">Hablemos de tu web.</h2>
+        <p class="section-body">Cuéntanos tu idea y te respondemos por email lo antes posible.</p>
+        <a href="mailto:tuwebamano@gmail.com" class="contact-email mono" data-cursor-magnetic>tuwebamano@gmail.com</a>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal data-reveal-delay="1" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+            <span class="form-error" data-error-for="name"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <span class="form-error" data-error-for="email"></span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Teléfono (opcional)</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            <span class="form-error" data-error-for="phone"></span>
+          </div>
+          <div class="form-field">
+            <label for="project">Tipo de proyecto</label>
+            <select id="project" name="project" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="negocio-local">Web para negocio local</option>
+              <option value="landing">Landing page</option>
+              <option value="tienda">Tienda online</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span class="form-error" data-error-for="project"></span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Cuéntanos tu idea</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="form-error" data-error-for="message"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn" data-cursor-magnetic>
+          <span class="btn-label">Enviar mensaje</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#inicio" class="logo logo-footer">Tu web a mano</a>
+    <a href="mailto:tuwebamano@gmail.com" class="mono">tuwebamano@gmail.com</a>
+    <nav class="footer-legal mono" aria-label="Legal">
+      <a href="legal.html">Aviso Legal</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="terminos.html">Términos</a>
+    </nav>
+    <p class="footer-copy mono">Tu Web a Mano — Diseño y desarrollo web a medida.</p>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" role="region" aria-label="Aviso de cookies" hidden>
+  <div class="cookie-banner-inner">
+    <p>Usamos cookies propias y de terceros (fuentes de Google, y analíticas solo si aceptas) para mejorar tu experiencia. Puedes leer más en nuestra <a href="cookies.html">Política de Cookies</a>.</p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-ghost btn-small" id="cookieReject">Rechazar</button>
+      <button type="button" class="btn btn-primary btn-small" id="cookieAccept">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba" data-cursor-magnetic>↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
