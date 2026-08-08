@@ -9,7 +9,7 @@
   /* Google Analytics 4: sustituye por tu Measurement ID real (analytics.google.com
      > Admin > Flujos de datos > tu flujo web). Solo se carga si el visitante acepta
      cookies en el banner, nunca antes. */
-  const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+  const GA_MEASUREMENT_ID = 'G-LX8C7G22G9';
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isTouch = window.matchMedia('(pointer: coarse)').matches;
