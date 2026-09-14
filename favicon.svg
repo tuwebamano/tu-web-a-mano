@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#1C1B18"/>
+  <text x="32" y="35" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="21" letter-spacing="-0.8" fill="#EDE6D9">TWM</text>
+  <rect x="13" y="43" width="38" height="6" rx="3" fill="#F2A93B"/>
+</svg>
